@@ -1,5 +1,10 @@
-**LOG**
+**Accuracy and Loss Plots for training session 3**
 
+![best accuracy training session plot](https://i.imgur.com/TFPt7JO.png)
+![best loss training session plot](https://i.imgur.com/ItGiBji.png)
+
+**LOG for 4 training sessions**
+**Session 1**
 Train on 60000 samples, validate on 10000 samples
 Epoch 1/20
 
@@ -81,6 +86,8 @@ Epoch 20/20
 
 Epoch 00020: LearningRateScheduler setting learning rate to 0.000424869.
 60000/60000 [==============================] - 6s 103us/step - loss: 0.0929 - acc: 0.9581 - val_loss: 0.0223 - val_acc: 0.9939
+
+**Session 2**
 Train on 60000 samples, validate on 10000 samples
 Epoch 1/20
 
@@ -162,6 +169,8 @@ Epoch 20/20
 
 Epoch 00020: LearningRateScheduler setting learning rate to 0.000424869.
 60000/60000 [==============================] - 6s 101us/step - loss: 0.0798 - acc: 0.9591 - val_loss: 0.0199 - val_acc: 0.9946
+
+**Session 3**
 Train on 60000 samples, validate on 10000 samples
 Epoch 1/20
 
@@ -243,6 +252,8 @@ Epoch 20/20
 
 Epoch 00020: LearningRateScheduler setting learning rate to 0.000424869.
 60000/60000 [==============================] - 6s 103us/step - loss: 0.0759 - acc: 0.9605 - val_loss: 0.0195 - val_acc: 0.9948
+
+**Session 4**
 Train on 60000 samples, validate on 10000 samples
 Epoch 1/20
 
@@ -325,5 +336,4 @@ Epoch 20/20
 Epoch 00020: LearningRateScheduler setting learning rate to 0.000424869.
 60000/60000 [==============================] - 6s 102us/step - loss: 0.0723 - acc: 0.9605 - val_loss: 0.0172 - val_acc: 0.9951
 
-![best accuracy training session plot](https://i.imgur.com/TFPt7JO.png)
-![best loss training session plot](https://i.imgur.com/ItGiBji.png)
+
