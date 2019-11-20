@@ -325,5 +325,5 @@ Epoch 20/20
 Epoch 00020: LearningRateScheduler setting learning rate to 0.000424869.
 60000/60000 [==============================] - 6s 102us/step - loss: 0.0723 - acc: 0.9605 - val_loss: 0.0172 - val_acc: 0.9951
 
-![best accuracy training session plot](https://imgur.com/TFPt7JO)
-![best loss training session plot](https://imgur.com/a/z2V9jUT)
+![best accuracy training session plot](https://i.imgur.com/TFPt7JO.png)
+![best loss training session plot](https://i.imgur.com/ItGiBji.png)
