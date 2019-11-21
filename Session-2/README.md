@@ -3,6 +3,9 @@
 ![best accuracy training session plot](https://i.imgur.com/TFPt7JO.png)
 ![best loss training session plot](https://i.imgur.com/ItGiBji.png)
 
+**Intuition**
+I saw the visualizations of the kernel in the first conv layer that a student posted on the Telegram group, and it seemed to me that the digits are being recognized with a high accuracy in the first layer itself, since I could see some visualizations that looked like digits. So I had an idea of using 10 kernels for the first layer, increasing it in the second layer and dropping again in third layer as common and good practice suggested. That is the only change I have made to the code for the model of 8th DNN.
+
 **LOG for 4 training sessions**
 **Session 1**
 Train on 60000 samples, validate on 10000 samples
