@@ -1,12 +1,15 @@
 **Validation score for base network** - 82.89
 
 **Model def**
+
 model = Sequential()
 model.add(SeparableConv2D(64, 3, 3, border_mode='same', input_shape=(32, 32, 3), use_bias=False)) #3 (32, 32, 64)
+
 model.add(BatchNormalization())
 model.add(Activation('relu'))
 
 model.add(SeparableConv2D(128, 3, 3, use_bias=False)) #5 (30, 30, 128)
+
 model.add(BatchNormalization())
 model.add(Activation('relu'))
 
@@ -14,10 +17,12 @@ model.add(MaxPooling2D(pool_size=(2, 2))) #(15, 15, 128)
 model.add(Dropout(0.3))
 
 model.add(SeparableConv2D(64, 3, 3, border_mode='same', use_bias=False)) #7 (15, 15, 64)
+
 model.add(BatchNormalization())
 model.add(Activation('relu'))
 
 model.add(SeparableConv2D(128, 3, 3, use_bias=False)) #11 (13, 13, 128)
+
 model.add(BatchNormalization())
 model.add(Activation('relu'))
 
@@ -25,18 +30,22 @@ model.add(MaxPooling2D(pool_size=(2, 2))) #(6, 6, 128)
 model.add(Dropout(0.3))
 
 model.add(SeparableConv2D(64, 3, 3, border_mode='same', use_bias=False)) #13 (6, 6, 64)
+
 model.add(BatchNormalization())
 model.add(Activation('relu'))
 
 model.add(SeparableConv2D(64, 3, 3, use_bias=False)) #15 (4, 4, 64)
+
 model.add(BatchNormalization())
 model.add(Activation('relu'))
 
 model.add(SeparableConv2D(32, 3, 3, use_bias=False)) #17 (2, 2, 32)
+
 model.add(BatchNormalization())
 model.add(Activation('relu'))
 
 model.add(SeparableConv2D(10, 2, 2, use_bias=False)) #19 (1, 1, 10)
+
 
 model.add(Flatten())
 model.add(Activation('softmax'))
